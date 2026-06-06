@@ -145,5 +145,32 @@ export const works: Work[] = [
         implementationTheme: '実装解説テーマ（1文）',
         troubleshooting: '詰まった問題と解決策...',
         performance: 'パフォーマンス改善の工夫...',
-    }
+    },
 ]
+
+export const gameJams: GameJam[] = [
+    {
+        name: 'Bitsummit 2025',
+        date: '2025年7月',
+        theme: 'シンプル操作の歯車を使ったカジュアルパズルゲーム',
+        description: '3Dパズル / 歯車を設置して、ステージに設置されてるギミックを動作させ、運搬物をゴールまでもっていく。',
+        platform: ['Windows'],
+        role: 'プログラマー（ギミック担当）',
+        team: 'チーム11名（プランナー2、プログラマー4、デザイナー5）',
+        result: null,
+        url: 'https://github.com/24a31a0011/Gear-Bot.git',
+        reflection: '',
+    },
+]
+
+export const certifications: Certification[] = [
+    {
+        name: '普通自動車第一種運転免許（AT限定）',
+        date: '2024年3月取得',
+        category: '',
+        score: '',
+        status: '取得済み',
+    },
+]
+
+export const 
