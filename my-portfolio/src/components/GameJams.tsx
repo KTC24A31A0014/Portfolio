@@ -1,4 +1,4 @@
-import { FaTrophy, FaLightbulb, FaArrowRight } from 'react-icon/fa6'
+import { FaTrophy, FaLightbulb, FaArrowRight } from 'react-icons/fa6'
 import { gameJams, type GameJam } from '../data/portfolio'
 
 function JamCard({ jam }: { jam: GameJam})
@@ -8,7 +8,7 @@ function JamCard({ jam }: { jam: GameJam})
             <div className = "jam-header">
                 <h3 className = "jam-name">{jam.name}</h3>
                 <div className = "jam-header-sub">
-                    {jam.date && <p className = "jam-date">{jam.data}</p>}
+                    {jam.date && <p className = "jam-date">{jam.date}</p>}
                     {jam.result && <span className = "jam-result"><FaTrophy /> {jam.result}</span>}
                 </div>
             </div>
@@ -16,7 +16,7 @@ function JamCard({ jam }: { jam: GameJam})
             {jam.theme && (
                 <div className = "jam-theme">
                     <span className = "jam-theme-label">テーマ</span>
-                    <span className = "jam-theme-text">{jam.theme</span>
+                    <span className = "jam-theme-text">{jam.theme}</span>
                 </div>
             )}
 
@@ -25,7 +25,7 @@ function JamCard({ jam }: { jam: GameJam})
             <div className = "jam-meta-row">
                 <div className = "jam-meta-item">
                     <span className = "jam-meta-label">PF</span>
-                    <span className = "jam-meta-value">{jam.platform.join(' / ')</span>
+                    <span className = "jam-meta-value">{jam.platform.join(' / ')}</span>
                 </div>
 
                 <div className = "jam-meta-item">
@@ -37,7 +37,7 @@ function JamCard({ jam }: { jam: GameJam})
             {jam.reflection && (
                 <div className = "jam-reflection">
                     <span className = "jam-rflection-icon"><FaLightbulb /></span>
-                    <p>{jam.reflection></p>
+                    <p>{jam.reflection}</p>
                 </div>
             )}
 

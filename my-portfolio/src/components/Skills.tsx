@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { FaStar } from 'react-icons/fa6'
 import { skills, type Skill } from '../data/portfolio'
 
 const CATEGORY_LABELS: Record<string, string> =
@@ -57,10 +58,48 @@ function SkillCard({ skill}: {skill: Skill })
             </ul>
             {skill.note && (
                 <p className = "skill-note">
-                    <span className = "skill-note-icon">♦</span>
+                    <span className = "skill-note-icon"><FaStar /></span>
                     {skill.note}
                 </p>
             )}
         </div>
+    )
+}
+
+export default function Skills()
+{
+    const [activeCategory, setActiveCategory] = useState('all')
+
+    const categories = ['all', ...new Set(skills.map((s) => s.category))]
+
+    const filtered = activeCategory === 'all'
+        ? skills
+        : skills.filter((s) => s.category === activeCategory)
+
+    return (
+        <section className = "section" id = "skills">
+            <div className = "container">
+                <h2 className = "section-title"><span>Skills</span></h2>
+                <p className = "section-sub">技術スタック</p>
+
+                <div className = "skills-categories">
+                    {categories.map((cat) => (
+                        <button
+                            key = {cat}
+                            className = {`skill-filter-btn ${activeCategory === cat ? 'active' : ''}`}
+                            onClick = {() => setActiveCategory(cat)}
+                        >
+                            {CATEGORY_LABELS[cat] ?? cat}
+                        </button>
+                    ))}
+                </div>
+
+                <div className = "skills-grid">
+                    {filtered.map((skill) => (
+                        <SkillCard key = {skill.name} skill = {skill} />
+                    ))}
+                </div>
+            </div>
+        </section>
     )
 }

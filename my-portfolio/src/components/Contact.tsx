@@ -1,14 +1,13 @@
 import type { ReactNode } from 'react'
 import { FaGithub, FaXTwitter, FaEnvelope } from 'react-icons/fa6'
 import { profile } from '../data/portfolio'
-import { Links } from 'react-router-dom';
 
 export default function Contact()
 {
     const links: { label: string, icon: ReactNode; href: string | null }[] =
     [
         { label: 'Github',          icon: <FaGithub />,     href: profile.links.github },
-        { label: 'Twitter / X '},   icon: <FaXTwitter />,   href: profile.links.twitter },
+        { label: 'Twitter / X ',   icon: <FaXTwitter />,   href: profile.links.twitter },
         { label: 'Email',           icon: <FaEnvelope />,   href: `mailto:${profile.links.email}`},
     ]
 
@@ -26,14 +25,14 @@ export default function Contact()
                     </p>
 
                     <div className = "contact-links">
-                        {Links
+                        {links
                             .filter((link): link is typeof link & { href: string } => link.href !== null)
                             .map((link) => (
                                 <a
                                     key = {link.label}
                                     href = {link.href}
                                     className = "contact-link-item"
-                                    target = {link.href.startsWith('mailto') ? underfined : '_blank'}
+                                    target = {link.href.startsWith('mailto') ? undefined : '_blank'}
                                     rel = "noreferrer"
                                 >
                                     <span className = "contact-link-icon">{link.icon}</span>

@@ -1,5 +1,5 @@
-import {Routes, Route } from 'react-router-dom'
-import { usetheme } from './hooks/useTheme'
+import { Routes, Route } from 'react-router-dom'
+import { useTheme } from './hooks/useTheme'
 import ScrollToTop from './components/ScrollToTop'
 import Header from './components/Header'
 import Footer from './components/Footer'

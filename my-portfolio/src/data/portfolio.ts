@@ -127,7 +127,7 @@ export const works: Work[] = [
         title: 'CUBE ROAD',
         genre: '3Dパズル / ステージクリア型',
         category: 'game',
-        thumbnail: null,
+        thumbnail: 'images/',
         screenshots: 'a',
         description: '3Dパズル / 歯車を設置して、ステージに設置されてるギミックを動作させ、運搬物をゴールまでもっていく。',
         tags: ['Unity', 'C#'],
@@ -173,4 +173,19 @@ export const certifications: Certification[] = [
     },
 ]
 
-export const 
+export const timeline: TimelineItem[] =
+[
+    { year: '2024年4月', event: '京都デザイン＆テクノロジー専門学校 スーパーAI＆テクノロジー学科 スーパーゲームクリエイター専攻 入学'},
+]
+
+import type { IconType } from 'react-icons'
+import { FaGamepad, FaGlobe, FaCube, FaFolder } from 'react-icons/fa6'
+
+export const CATEGORY_ICON: Record<string, IconType> = 
+{
+    game: FaGamepad,
+    web:  FaGlobe,
+    '3d': FaCube,
+}
+
+export const CATEGORY_ICON_FALLBACK: IconType = FaFolder
