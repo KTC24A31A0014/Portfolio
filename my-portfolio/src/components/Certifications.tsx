@@ -1,16 +1,27 @@
 import type { IconType } from 'react-icons'
 import {
-    FaLancmark, FaIdCard, FaMedal, FaBolt, FaFlag,
-    FaDesktop, FaBookOpen, FaClipboard,
+    FaLandmark, FaIdCard, FaMedal, FaBolt,
+    FaFlag,FaDesktop, FaBookOpen, FaClipboard,
 }   from 'react-icons/fa6'
-import { certifications, type Certification, type CerStatus } from '../data/portfolio'
+import { certifications, type Certification, type CertStatus } from '../data/portfolio'
+
+// ステータスごとの色設定
+const STATUS_CONFIG: Record<CertStatus, { color: string; bg: string; border: string }> =
+{
+ '取得済み': { color: '#4ade80', bg: 'rgba(74,222,128,0.1)',  border: 'rgba(74,222,128,0.3)' },
+  '受験予定': { color: '#60a5fa', bg: 'rgba(96,165,250,0.1)',  border: 'rgba(96,165,250,0.3)' },
+  '取得予定': { color: '#a78bfa', bg: 'rgba(167,139,250,0.1)', border: 'rgba(167,139,250,0.3)' },
+  '学習中':   { color: '#fbbf24', bg: 'rgba(251,191,36,0.1)',  border: 'rgba(251,191,36,0.3)' },}
 
 // カテゴリごとのアイコン (react-icons Component)
 const CATEGORY_ICONS: Record<string, IconType> = {
     '国家資格':     FaLandmark,
     '免許':         FaIdCard,
-    'ベンダー認定'  FaMedal,
-    '競プロ'        FaBolt,
+    'ベンダー認定':  FaMedal,
+    '競プロ':        FaBolt,
+    'CTF':          FaFlag,
+    'ISUCON':       FaDesktop,
+    '学習中':       FaBookOpen,
     // 'CTF': FaFlag, 'ISUCON': FaDesktop, '学習中': FaBookOpen ...
 }
 

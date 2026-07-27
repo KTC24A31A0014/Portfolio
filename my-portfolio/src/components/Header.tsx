@@ -25,7 +25,7 @@ export default function Header({ theme, onThemeToggle }: Props)
                 <div className = "header-inner">
                     {/* ロゴ:常にホームへ戻る */}
                     <Link to = "/" className ="header-logo">
-                        {profile.nameEn.split(' ')[0]<span>.</span>}
+                        {profile.nameEn.split(' ')[0]}<span>.</span>
                     </Link>
                     <nav>
                         <ul className = "header-nav">

@@ -13,7 +13,7 @@ export default function ScrollToTop()
             setTimeout(() => 
             {
                 const el = document.querySelector(hash)
-                if (el) el.scroooIntoView({ behavior: 'smooth'})
+                if (el) el.scrollIntoView({ behavior: 'smooth'})
             },0)
         }
         else

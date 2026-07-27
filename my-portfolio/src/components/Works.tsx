@@ -4,7 +4,7 @@ import {
     FaArrowRight,
     FaGithub,
     FaArrowUpRightFromSquare,
-} from 'reack-icons/fa6'
+} from 'react-icons/fa6'
 import {
     works,
     CATEGORY_ICON,
@@ -34,7 +34,7 @@ function WorkCard({ work }: {work: Work })
                 <p className = "work-meta">PF：<span>{work.platform?.join(' / ')}</span></p>
 
                 {work.venues?.length > 0 && (
-                    <div classNam = "work-venues">
+                    <div className = "work-venues">
                         {work.venues.map((v, i) => (
                             <span key = {i} className = "work-venue-tag"><FaLocationDot /> {v.name} {v.date}</span>
                         ))}
