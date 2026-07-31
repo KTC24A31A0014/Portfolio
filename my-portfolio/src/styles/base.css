@@ -23,7 +23,7 @@
 }
 
 /* CSS変数(ライトテーマ) */
-[data-theme="light]
+[data-theme="light"]
 {
     --color-bg: #f4f4f8;
     --color-text: #1a1a2e;
