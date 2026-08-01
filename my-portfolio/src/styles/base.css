@@ -26,6 +26,7 @@
 [data-theme="light"]
 {
     --color-bg: #f4f4f8;
+    --color-surface: #ffff6c;
     --color-text: #1a1a2e;
     /* ...省略 */
 }
