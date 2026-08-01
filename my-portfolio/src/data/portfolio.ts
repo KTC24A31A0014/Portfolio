@@ -112,10 +112,37 @@ export const skills: Skill[] = [
     {
         name: 'Unity',
         version: '6000.3.8f1',
-        level: 50,
-        category: 'game',
+        level: 40,
+        category: 'Game Engine',
         capabilities: ['3D/2Dゲーム開発'],
         note: 'ゲームの基礎動作やギミックを実装済み'
+    },
+
+    {
+        name: 'UnrealEngine',
+        version: '',
+        level: 40,
+        category: 'Game Engine',
+        capabilities: ['3Dゲーム開発'],
+        note: null
+    },
+
+    {
+        name: 'C#',
+        version: '',
+        level: 40,
+        category: '言語',
+        capabilities: [''],
+        note: null
+    },
+
+    {
+        name: 'C++',
+        version: '',
+        level: 40,
+        category: '言語',
+        capabilities: [''],
+        note: null
     },
 
     // ...続きを追加
@@ -178,7 +205,7 @@ export const works: Work[] = [
         title: 'RUMBLE TUMBLE',
         genre: '対戦3Dアクション',
         category: 'game',
-        thumbnail: 'images/',
+        thumbnail: '/images/RumbleTumbleタイトルロゴ1.png',
         screenshots: 'a',
         description: '対戦3Dアクション / 歯車を設置して、ステージに設置されてるギミックを動作させ、運搬物をゴールまでもっていく。',
         tags: ['Unity', 'C#'],
@@ -262,6 +289,7 @@ export const certifications: Certification[] = [
 export const timeline: TimelineItem[] =
 [
     { year: '2024年4月', event: '京都デザイン＆テクノロジー専門学校 スーパーAI＆テクノロジー学科 スーパーゲームクリエイター専攻 入学'},
+    { year: '2028年3月', event: '京都デザイン＆テクノロジー専門学校 スーパーAI＆テクノロジー学科 スーパーゲームクリエイター専攻 卒業見込み'},
 ]
 
 import type { IconType } from 'react-icons'

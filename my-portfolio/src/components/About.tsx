@@ -18,6 +18,10 @@ export default function About()
                                 <dt>学校</dt>
                                 <dd>{profile.school}</dd>
                             </div>
+                            <div className="profile-school-row">
+                                <dt>学科</dt>
+                                <dd>{profile.department}</dd>
+                            </div>                                                
                             <div className = "profile-school-row">
                                 <dt>卒業</dt>
                                 <dd className = "profile-graduation">{profile.graduationYear}</dd>
