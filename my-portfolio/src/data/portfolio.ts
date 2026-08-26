@@ -162,7 +162,7 @@ export const works: Work[] = [
         period: '',
         team: 'チーム制作',
         role: 'プログラマー',
-        github: 'https://github.com/username/repo',
+        github: 'https://github.com/KTC24A31A0014/CubeRoad.git',
         link: null,                         // 公開URLがある場合
         venues: [                           // 出展・公開先（複数可）
                     { name: '2025we are JIKEI COM 若きクリエーター展', date: '2025年2月' },
@@ -187,7 +187,7 @@ export const works: Work[] = [
         period: '',
         team: 'チーム制作',
         role: 'プログラマー',
-        github: 'https://github.com/username/repo',
+        github: 'https://github.com/Colon-programmer/Gear-Logic.git',
         link: null,                         // 公開URLがある場合
         venues: [                           // 出展・公開先（複数可）
                     { name: 'BitSummit 2025', date: '2025年7月' },

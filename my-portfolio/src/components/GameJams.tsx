@@ -57,7 +57,7 @@ export default function GameJams()
     return (
         <section className = "section" id = "gamejams">
             <div className = "container">
-                <h2 className = "section-title"><span>Gaem Jams</span></h2>
+                <h2 className = "section-title"><span>Game Jams</span></h2>
                 <p className = "section-sub">学校外部ゲームジャム参加実績</p>
 
                 <div className = "jam-grid">
